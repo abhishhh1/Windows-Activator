@@ -3,7 +3,7 @@ title Windows 10 ALL version activator
 cls
 echo ************************************
 echo Supported products:
-echo - Windows 10 Home&echo - Windows 10 Professional&echo - Windows 10 Enterprise, Enterprise LTSB - Windows 10 Education
+echo - Windows 10 Home - Windows 10 Professional - Windows 10 Enterprise, Enterprise LTSB - Windows 10 Education
 echo ************************************
 echo Windows 10 activation...
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99 >nul
@@ -30,5 +30,7 @@ if %i%==5 set KMS_Sev=kms.chinancce.com
 if %i%==6 set KMS_Sev=kms.shuax.com
 if %i%==7 exit
 cscript //nologo c:\windows\system32\slmgr.vbs /skms %KMS_Sev% >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully" && (echo.&  ************************************ & echo. & choice /n /c YN /m "Do you want to restart your PC now [Y,N]?" & if errorlevel 2 exit) || (echo The connection to the server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
+cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully"
+echo  ************************************
+choice /n /c YN /m "Do you want to restart your PC now [Y,N]?" & if errorlevel 2 exit) || (echo The connection to the server failed! Trying to connect to another one... & echo Please wait... & set /a i+=1 & goto server)
 shutdown.exe /r /t 00

@@ -1,5 +1,7 @@
 @echo off
-title Windows 10 ALL version activator&cls&echo ************************************
+title Windows 10 ALL version activator
+cls
+echo ************************************
 echo Supported products:
 echo - Windows 10 Home&echo - Windows 10 Professional&echo - Windows 10 Enterprise, Enterprise LTSB - Windows 10 Education
 echo ************************************

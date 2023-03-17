@@ -24,6 +24,5 @@ set KMS_Sev=kms.searchforjohn.com
 cscript //nologo c:\windows\system32\slmgr.vbs /skms %KMS_Sev% >nul
 cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully"
 echo  ************************************
-choice /n /c YN /m "Do you want to restart your PC now [Y,N]?" || exit
-shutdown.exe /r /t 00
+choice /n /c YN /m "Do you want to restart your PC now [Y,N]?" || shutdown.exe /r /t 00
 exit

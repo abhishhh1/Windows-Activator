@@ -23,6 +23,22 @@ echo ************************************
 set KMS_Sev=kms.searchforjohn.com
 cscript //nologo c:\windows\system32\slmgr.vbs /skms %KMS_Sev% >nul
 cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully"
+set choice=
+:start
 echo  ************************************
-choice /n /c YN /m "Do you want to restart your PC now [Y,N]?" || shutdown.exe /r /t 00
+echo "Do you want to restart your PC now?"
+ECHO.
+ECHO 1. Yes
+ECHO 2. No
+set choice=
+set /p choice=Type the number to choose.
+if not '%choice%'=='' set choice=%choice:~0,1%
+if '%choice%'=='1' goto YES
+if '%choice%'=='2' goto NO
+ECHO "%choice%" is not valid, try again
+ECHO.
+goto start
+:YES
+shutdown.exe /r /t 00
+:NO
 exit

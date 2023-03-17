@@ -1,5 +1,11 @@
 @echo off
-title Windows 10 ALL version activator&cls&echo ************************************ &echo Supported products:&echo - Windows 10 Home&echo - Windows 10 Professional&echo - Windows 10 Enterprise, Enterprise LTSB&echo - Windows 10 Education&echo.&echo.&echo ************************************ &echo Windows 10 activation...
+title Windows 10 ALL version activator
+cls
+echo ************************************
+echo Supported products:
+echo - Windows 10 Home - Windows 10 Professional - Windows 10 Enterprise, Enterprise LTSB - Windows 10 Education
+echo ************************************
+echo Windows 10 activation...
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99 >nul
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk 3KHY7-WNT83-DGQKR-F7HPR-844BM >nul
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk 7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH >nul
@@ -13,15 +19,11 @@ cscript //nologo c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT4
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4 >nul
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk WNMTR-4C88C-JK8YV-HQ7T2-76DF9 >nul
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk 2F77B-TNFGY-69QQF-B8YKP-D69TJ >nul
-echo ************************************ &echo.&echo.&set i=1
-:server
-if %i%==1 set KMS_Sev=kms.chinancce.com
-if %i%==2 set KMS_Sev=NextLevel.uk.to
-if %i%==3 set KMS_Sev=GuangPeng.uk.to
-if %i%==4 set KMS_Sev=AlwaysSmile.uk.to
-if %i%==5 set KMS_Sev=kms.chinancce.com 
-if %i%==6 set KMS_Sev=kms.shuax.com
-if %i%==7 exit
+echo ************************************
+set KMS_Sev=kms.searchforjohn.com
 cscript //nologo c:\windows\system32\slmgr.vbs /skms %KMS_Sev% >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully" && (echo.&  ************************************ & echo. & choice /n /c YN /m "Do you want to restart your PC now [Y,N]?" & if errorlevel 2 exit) || (echo The connection to the server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
+cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully"
+echo  ************************************
+choice /n /c YN /m "Do you want to restart your PC now [Y,N]?" || exit
 shutdown.exe /r /t 00
+exit
